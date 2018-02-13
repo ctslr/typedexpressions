@@ -12,7 +12,7 @@
     // and what happends if I provide those incorrectly? Yup, another runtime failure
     var lambda = Expression.Lambda<Func<bool, string>>(binary, parameter);
 ```
-Actually the whole "make a compilable expression" thing doesn't make sence
+Actually the whole "make a compilable expression" thing doesn't make sense
 
 ``` csharp
     var parameter = Expression.Parameter<int>();
