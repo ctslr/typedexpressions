@@ -85,15 +85,11 @@ namespace Expressions.Generic.Launcher
 			Console.WriteLine(awesomeFunc((true, false)));
 			Console.WriteLine(awesomeFunc((true, true)));
 
-			//var constant = Expression.Constant(true);
-			//var not = Expression.Not(constant);
-			//var func = not.Compile();
-			//Console.WriteLine(func());
+			AwesomeBitwiseAndLeet();
 
-			//AwesomeBitwiseAndLeet();
-			//NewAwesome();
-			//BitwiseAndLeet();
-			//InvalidNotType();
+
+			//BitwiseAndLeet(); // runtime throws
+			//InvalidNotType(); // runtime throws
 			Console.ReadKey(true);
 		}
 
@@ -116,36 +112,20 @@ namespace Expressions.Generic.Launcher
 			var not2 = Native.Expression.Not(constant2);
 		}
 
-		//static void AwesomeBitwiseAndLeet()
-		//{
-		//	var parameter = Expression.Parameter<int>();
-		//	var constant = Expression.Constant(1337);
+		static void AwesomeBitwiseAndLeet()
+		{
+			var parameter = Expression.Parameter<int>();
+			var constant = Expression.Constant(1337);
 
-		// can't infer type -- compile time
-		//	//var implicitBinary = Expression.And(parameter, Expression.Constant(1337.0));
+			//can't infer type -- compile time
+			//var implicitBinary = Expression.And(parameter, Expression.Constant(1337.0));
 
-		// can't cast -- compile time
-		//	//var binary0 = Expression.And<int>(parameter, Expression.Constant(1337.0));
-		//	var binary = Expression.And(parameter, constant);
-		//	var lambda = binary.ToLambda();
-		//	var func = lambda.Compile();
-		//	Console.WriteLine(func(1337));
-		//	Console.WriteLine(func(1338));
-
-		// cannot convert -- compile time
-		//	//Console.WriteLine(func(1338.0));
-
-		//}
-
-		//static void NewAwesome()
-		//{
-		//	var parameter1 = Expression.Parameter<bool>();
-		//	var parameter2 = Expression.Parameter<bool>();
-		//	var binary = Expression.And(parameter1, parameter2);
-		//	throw null;
-		//	//var lambda = Expression.Lambda(binary, parameter1, parameter2);
-		//	//var func = lambda.Compile();
-
-		//}
+			//can't cast -- compile time
+			//var binary0 = Expression.And<int>(parameter, Expression.Constant(1337.0));
+			var binary = Expression.And(parameter, constant);
+			var func = binary.Compile();
+			Console.WriteLine(func(1337));
+			Console.WriteLine(func(1338));
+		}
 	}
 }
