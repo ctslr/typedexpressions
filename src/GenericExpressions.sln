@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressions.Generic", "Expressions.Generic\Expressions.Generic.csproj", "{AAFA5407-120B-4636-A8F3-D6FB811EE75D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressions.Generic.Launcher", "Expressions.Generic.Launcher\Expressions.Generic.Launcher.csproj", "{BEEBC502-8B9E-435C-AA4F-CB70850FC529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressions.Generic.Tests", "Expressions.Generic.Tests\Expressions.Generic.Tests.csproj", "{AEF81157-FECF-4F3C-AD16-6EF1AB271220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAFA5407-120B-4636-A8F3-D6FB811EE75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFA5407-120B-4636-A8F3-D6FB811EE75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFA5407-120B-4636-A8F3-D6FB811EE75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFA5407-120B-4636-A8F3-D6FB811EE75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEBC502-8B9E-435C-AA4F-CB70850FC529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEBC502-8B9E-435C-AA4F-CB70850FC529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEBC502-8B9E-435C-AA4F-CB70850FC529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEBC502-8B9E-435C-AA4F-CB70850FC529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF81157-FECF-4F3C-AD16-6EF1AB271220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF81157-FECF-4F3C-AD16-6EF1AB271220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF81157-FECF-4F3C-AD16-6EF1AB271220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF81157-FECF-4F3C-AD16-6EF1AB271220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF4ACB1A-3B99-46C2-A426-F4A09F956196}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://go-ro.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Expressions.Generic.Launcher\\Expressions.Generic.Launcher.csproj
+		SccProjectName1 = Expressions.Generic.Launcher
+		SccLocalPath1 = Expressions.Generic.Launcher
+		SccProjectUniqueName2 = Expressions.Generic\\Expressions.Generic.csproj
+		SccProjectName2 = Expressions.Generic
+		SccLocalPath2 = Expressions.Generic
+		SccProjectUniqueName3 = Expressions.Generic.Tests\\Expressions.Generic.Tests.csproj
+		SccProjectName3 = Expressions.Generic.Tests
+		SccLocalPath3 = Expressions.Generic.Tests
+	EndGlobalSection
+EndGlobal
